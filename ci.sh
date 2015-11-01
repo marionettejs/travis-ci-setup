@@ -26,8 +26,8 @@ then
   # Lodash@2 and Lodash@3 have different file structures
   if [[ "$LODASH" < "3.0" ]]
   then
-    mv node_modules/lodash/lodash.js node_modules/underscore/underscore.js
-  else 
-    mv node_modules/lodash/index.js node_modules/underscore/underscore.js
+    cp node_modules/lodash/lodash.js node_modules/underscore/underscore.js
+  else
+    cp node_modules/lodash/index.js node_modules/underscore/underscore.js
   fi
 fi
